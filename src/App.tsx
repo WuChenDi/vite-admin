@@ -26,7 +26,7 @@ export default defineComponent({
           </li>
         </ul>
         <ConfigProvider locale={zhCN}>
-          <RouterView />
+          <router-view />
         </ConfigProvider>
       </>
     );

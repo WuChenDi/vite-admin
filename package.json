@@ -7,9 +7,11 @@
     "url": "https://github.com/WuChenDi"
   },
   "scripts": {
+    "serve": "npm run dev",
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "preview": "npm run build && vite preview",
+    "preview:dist": "vite preview"
   },
   "dependencies": {
     "@types/highcharts": "^7.0.0",
@@ -35,6 +37,7 @@
     "@vitejs/plugin-vue": "^1.2.2",
     "@vitejs/plugin-vue-jsx": "^1.1.5",
     "@vue/compiler-sfc": "^3.0.11",
+    "dotenv": "^10.0.0",
     "eslint": "^7.28.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-define-config": "^1.0.8",
