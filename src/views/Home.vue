@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import HelloWorld from "@/components/HelloWorld.vue";
-import { useTitle } from "@vueuse/core";
+import HelloWorld from '@/components/HelloWorld.vue';
+import { useTitle } from '@vueuse/core';
 const title = useTitle('dd');
 </script>
