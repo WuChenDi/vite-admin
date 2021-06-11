@@ -9,7 +9,7 @@ export default defineComponent({
   setup() {
     return () => (
       <>
-        <img alt="Vue logo" src={logo} />
+        {/* <img alt="Vue logo" src={logo} />
 
         <ul>
           <li>
@@ -24,7 +24,7 @@ export default defineComponent({
           <li>
             <router-link to="/chart">ChartDemo</router-link>
           </li>
-        </ul>
+        </ul> */}
         <ConfigProvider locale={zhCN}>
           <router-view />
         </ConfigProvider>

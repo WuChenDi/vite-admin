@@ -34,6 +34,11 @@
     "@types/lodash" "^4.14.165"
     lodash "^4.17.15"
 
+"@antfu/utils@^0.1.6":
+  version "0.1.7"
+  resolved "https://registry.nlark.com/@antfu/utils/download/@antfu/utils-0.1.7.tgz#ac9e0e62a2490db987c9d8c6b4f38076d763c27f"
+  integrity sha1-rJ4OYqJJDbmHydjGtPOAdtdjwn8=
+
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.nlark.com/@babel/code-frame/download/@babel/code-frame-7.12.11.tgz?cache=0&sync_timestamp=1623280394200&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Fcode-frame%2Fdownload%2F%40babel%2Fcode-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
@@ -831,6 +836,19 @@
   integrity sha1-J0wr8WPSXrf9L8UfIwiKK38GBZQ=
   dependencies:
     vue-demi "*"
+
+"@windicss/plugin-utils@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.nlark.com/@windicss/plugin-utils/download/@windicss/plugin-utils-1.0.3.tgz#04d039ef56b58180079df3f9b3bd8a21a57368d3"
+  integrity sha1-BNA571a1gYAHnfP5s72KIaVzaNM=
+  dependencies:
+    "@antfu/utils" "^0.1.6"
+    debug "^4.3.2"
+    fast-glob "^3.2.5"
+    jiti "^1.10.1"
+    magic-string "^0.25.7"
+    micromatch "^4.0.4"
+    windicss "^3.1.3"
 
 JSONStream@^1.0.4:
   version "1.3.5"
@@ -2179,6 +2197,11 @@ isexe@^2.0.0:
   resolved "https://registry.nlark.com/isexe/download/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
 
+jiti@^1.10.1:
+  version "1.10.1"
+  resolved "https://registry.nlark.com/jiti/download/jiti-1.10.1.tgz#bc2a175b9435274dc8659d3d9a121a91c6b3a1af"
+  integrity sha1-vCoXW5Q1J03IZZ09mhIakcazoa8=
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.nlark.com/js-tokens/download/js-tokens-4.0.0.tgz?cache=0&sync_timestamp=1619345098261&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fjs-tokens%2Fdownload%2Fjs-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -2735,6 +2758,11 @@ path-parse@^1.0.6:
   version "1.0.7"
   resolved "https://registry.nlark.com/path-parse/download/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
   integrity sha1-+8EUtgykKzDZ2vWFjkvWi77bZzU=
+
+path-to-regexp@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.nlark.com/path-to-regexp/download/path-to-regexp-6.2.0.tgz#f7b3803336104c346889adece614669230645f38"
+  integrity sha1-97OAMzYQTDRoia3s5hRmkjBkXzg=
 
 path-type@^4.0.0:
   version "4.0.0"
@@ -3475,7 +3503,7 @@ to-regex-range@^5.0.1:
 
 trim-newlines@^3.0.0:
   version "3.0.1"
-  resolved "https://registry.nlark.com/trim-newlines/download/trim-newlines-3.0.1.tgz?cache=0&sync_timestamp=1622220430999&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftrim-newlines%2Fdownload%2Ftrim-newlines-3.0.1.tgz#260a5d962d8b752425b32f3a7db0dcacd176c144"
+  resolved "https://registry.nlark.com/trim-newlines/download/trim-newlines-3.0.1.tgz?cache=0&sync_timestamp=1623341510447&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftrim-newlines%2Fdownload%2Ftrim-newlines-3.0.1.tgz#260a5d962d8b752425b32f3a7db0dcacd176c144"
   integrity sha1-Jgpdli2LdSQlsy86fbDcrNF2wUQ=
 
 trim-off-newlines@^1.0.0:
@@ -3643,6 +3671,16 @@ vite-plugin-compression@^0.2.5:
     debug "^4.3.2"
     fs-extra "^9.1.0"
 
+vite-plugin-windicss@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.nlark.com/vite-plugin-windicss/download/vite-plugin-windicss-1.0.3.tgz#bd45cfee13777e7b57c37a257ebcb7e73fee94ab"
+  integrity sha1-vUXP7hN3fntXw3olfry35z/ulKs=
+  dependencies:
+    "@windicss/plugin-utils" "1.0.3"
+    chalk "^4.1.1"
+    debug "^4.3.2"
+    windicss "^3.1.3"
+
 vite@^2.3.4:
   version "2.3.7"
   resolved "https://registry.nlark.com/vite/download/vite-2.3.7.tgz?cache=0&sync_timestamp=1623136852238&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvite%2Fdownload%2Fvite-2.3.7.tgz#3023892419367465e1af1739578f8663d04243b2"
@@ -3739,6 +3777,11 @@ which@^2.0.1:
   integrity sha1-fGqN0KY2oDJ+ELWckobu6T8/UbE=
   dependencies:
     isexe "^2.0.0"
+
+windicss@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.nlark.com/windicss/download/windicss-3.1.3.tgz?cache=0&sync_timestamp=1623120909052&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fwindicss%2Fdownload%2Fwindicss-3.1.3.tgz#a4b80af48bdd5d4be13520f700b497af455df700"
+  integrity sha1-pLgK9IvdXUvhNSD3ALSXr0Vd9wA=
 
 word-wrap@^1.2.3:
   version "1.2.3"
