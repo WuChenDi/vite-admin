@@ -31,6 +31,7 @@ export default defineComponent({
     };
 
     const checkAge = async (rule: RuleObject, value: number) => {
+      console.log(rule, value);
       if (!value) {
         return Promise.reject('Please input the age');
       }
@@ -51,13 +52,14 @@ export default defineComponent({
         return Promise.reject('Please input the password');
       } else {
         if (formState.checkPass !== '') {
-          formRef.value.validateField('checkPass');
+          formRef.value.validateFields('checkPass');
         }
         return Promise.resolve();
       }
     };
 
     const validatePass2 = async (rule: RuleObject, value: string) => {
+      console.log(rule, value);
       if (value === '') {
         return Promise.reject('Please input the password again');
       } else if (value !== formState.pass) {
@@ -97,16 +99,16 @@ export default defineComponent({
       }
     );
 
-    setInterval(() => {
-      formState.pass++;
-      // formState.pass += 1;
-    }, 1000);
+    // setInterval(() => {
+    //   formState.pass++;
+    //   // formState.pass += 1;
+    // }, 1000);
 
     return () => (
       <>
-        <h1>{formState?.pass || 1}</h1>
-        <Input type="text" v-model={formState.pass} />
-        {/* <Form
+        <h1>{formState?.pass}</h1>
+        {/* <Input type="text" v-model={[formState.pass, 'value']} /> */}
+        <Form
           name="custom-validation"
           ref={formRef}
           model={formState}
@@ -116,13 +118,13 @@ export default defineComponent({
           onFinishFailed={handleFinishFailed}
         >
           <Form.Item required hasFeedback label="Password" name="pass">
-            <Input v-model={formState.pass} type="password" autocomplete="off" />
+            <Input v-model={[formState.pass, 'value']} type="password" autocomplete="off" />
           </Form.Item>
           <Form.Item hasFeedback label="Confirm" name="checkPass">
-            <Input v-model={formState.checkPass} type="password" autocomplete="off" />
+            <Input v-model={[formState.checkPass, 'value']} type="password" autocomplete="off" />
           </Form.Item>
           <Form.Item hasFeedback label="Age" name="age">
-            <InputNumber v-model={formState.age} />
+            <InputNumber v-model={[formState.age, 'value']} />
           </Form.Item>
           <Form.Item {...tailLayout}>
             <Button type="primary" html-type="submit">
@@ -132,7 +134,7 @@ export default defineComponent({
               Reset
             </Button>
           </Form.Item>
-        </Form> */}
+        </Form>
       </>
     );
   },
